@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import './index.css';
 
-let curDate = new Date();
-curDate = curDate.getHours();
+let curDate = new Date().getHours();
 let greeting ="";
 const cssGreeting={ };
 
