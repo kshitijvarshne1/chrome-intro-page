@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import './index.css';
 
-let curDate = new Date(2021,5,5,8);
+let curDate = new Date();
 curDate = curDate.getHours();
 let greeting ="";
 const cssGreeting={ };
@@ -22,6 +23,10 @@ else{
 }
 
 ReactDom.render(
-    <h1>Hello sir, <span style={cssGreeting}>{greeting}</span></h1>
+    <>
+        <div>
+            <h1>Hello sir, <span style={cssGreeting}>{greeting}</span></h1>
+        </div>
+    </>
     ,document.getElementById('root')
 );
